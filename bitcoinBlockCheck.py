@@ -18,8 +18,8 @@ hashPrevBlock = str2le("00000000000000000152cd3a2ca9a0e9495d74570a84251e2f653e19
 hashMerkleRoot = str2le("21cca5a86df0d269f93fe4c861776f73d0b83e5083803fc3a49f8ad01660e767")#.decode("hex")
 ##converting timestamp "2016-10-22 12:00:42" unix is a pain
 ##BEWARE blockchain.info is in UTC but other explorer may not (ex blockexplorer.com is +2 hours)
-
-unix = int(time.mktime(dateutil.parser.parse('2016-10-22 12:00:42', parserinfo=None) .timetuple()))
+blocktime = '2016-10-22 12:00:42'
+unix = int(time.mktime(dateutil.parser.parse(blocktime, parserinfo=None) .timetuple()))
 timeUnix = str2le(hex(unix)[2:])
 
 bits = str2le(hex(int("402931908"))[2:])
