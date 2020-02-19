@@ -19,7 +19,6 @@ hashMerkleRoot_ = "21cca5a86df0d269f93fe4c861776f73d0b83e5083803fc3a49f8ad01660e
 blocktime_ = "2016-10-22 12:00:42"
 bits_ = "402931908"
 nonce_ = "3038619565"
-blocktime_ = '2016-10-22 12:00:42'
 ## Blockheader:
 version = str2le(hex(int(version_))[2:])
 hashPrevBlock = str2le(hashPrevBlock_)#.decode("hex")
